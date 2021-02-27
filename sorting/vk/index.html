@@ -1,36 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>ct.js game</title><meta http-equiv="content-script-type" content="text/javascript"><meta http-equiv="content-style-type" content="text/css"><meta name="generator" content="ct.js Game Editor"><link type="text/css" href="ct.css" rel="stylesheet"><meta name="theme-color" content="ct.js game"><meta name="application-name" content="ct.js game"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ct.js game"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="msapplication-TileColor" content="ct.js game"><meta name="msapplication-TileImage" content="mstile-144x144.png"></head><body><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(69383590, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });</script><noscript><div><img src="https://mc.yandex.ru/watch/69383590" style="position:absolute; left:-9999px;" alt=""></div></noscript><script src="https://yandex.ru/games/sdk/v2"></script><script type="text/javascript">YaGames.init({
-            adv: {
-                onAdvClose: wasShown => {
-                      console.info('adv closed!');
-                }
-            }
-        })
-        .then(ysdk => {
-            window.sdk = ysdk;
-            ysdk.adv.showFullscreenAdv({callbacks:{}});
-      });</script><script type="text/javascript" src="./sscd.min.js"></script><div id="ct"><div class="ct-aLoadingScreen"><div class="ct-aLoadingProgress" data-progress="0"><span>ЗАГРУЗКА…</span><div style="width: 0%;" class="ct-aLoadingBar"></div></div></div></div><script src="pixi.min.js"></script><script src="pixi-particles.min.js"></script><script async src="ct.js"></script><div id="yandex_rtb_R-A-672926-3"></div><script type="text/javascript">function LoadBaner(){
-    (function(w, d, n, s, t) {
-        w[n] = w[n] || [];
-        w[n].push(function() {
-            Ya.Context.AdvManager.render({
-                blockId: "R-A-672926-3",
-                renderTo: "yandex_rtb_R-A-672926-3",
-                async: true
-            });
-        });
-        t = d.getElementsByTagName("script")[0];
-        s = d.createElement("script");
-        s.type = "text/javascript";
-        s.src = "//an.yandex.ru/system/context.js";
-        s.async = true;
-        t.parentNode.insertBefore(s, t);
-    })(this, this.document, "yandexContextAsyncCallbacks");
-}</script></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>ct.js game</title><meta http-equiv="content-script-type" content="text/javascript"><meta http-equiv="content-style-type" content="text/css"><meta name="generator" content="ct.js Game Editor"><link type="text/css" href="ct.css" rel="stylesheet"><meta name="theme-color" content="ct.js game"><meta name="application-name" content="ct.js game"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ct.js game"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="msapplication-TileColor" content="ct.js game"><meta name="msapplication-TileImage" content="mstile-144x144.png"></head><body><script type="text/javascript" src="./sscd.min.js"></script><script type="text/javascript" src="scripts/utils.js"></script><script type="text/javascript" src="scripts/ads.js"></script><script type="text/javascript" src="scripts/vkplatformprovider.js"></script><script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script><script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script><script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script><script>const PLATFORM_OPTIONS = { logsEnabled: true}
+	 
+window.addEventListener('load', function() {
+	window.platformProvider = new VKPlatformProvider(PLATFORM_OPTIONS)
+	platformProvider.initialize().then(() => {
+		console.log('onPlatformProviderInitialized');
+                window.adsProvider = new AdsProvider();
+	       
+	}) 
+});</script><div id="ct"><div class="ct-aLoadingScreen"><div class="ct-aLoadingProgress" data-progress="0"><span>ЗАГРУЗКА…</span><div style="width: 0%;" class="ct-aLoadingBar"></div></div></div></div><script src="pixi.min.js"></script><script src="pixi-particles.min.js"></script><script async src="ct.js"></script></body></html>
