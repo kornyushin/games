@@ -10,11 +10,11 @@ AdsProvider.prototype.ShowInterstitial= function(user_id)
 	console.log("function ShowInterstitial for user id");
 	Promise.resolve(user_id).then(function(value) {
 		console.log(value);
-		var app_id = 7766386;  // your app's id
+		var app_id = 7773901;  // your app's id
  
 		admanInit({
 		  user_id: value,
-		  app_id: 7766386,
+		  app_id: 7773901,
 		  type: 'preloader'         // 'preloader' or 'rewarded' (default - 'preloader')
 		   //,params: {preview: 1}   // to verify the correct operation of advertising
 		}, onAdsReady, onNoAds);
@@ -37,11 +37,11 @@ AdsProvider.prototype.ShowReward= function(user_id, reward)
 	console.log("function ShowInterstitial for user id");
 	Promise.resolve(user_id).then(function(value) {
 		console.log(value);
-		var app_id = 7766386;  // your app's id
+		var app_id = 7773901;  // your app's id
  
 		admanInit({
 		  user_id: value,
-		  app_id: 7766386,
+		  app_id: 7773901,
 		  type: 'rewarded'         // 'preloader' or 'rewarded' (default - 'preloader')
 		   //,params: {preview: 1}   // to verify the correct operation of advertising
 		}, onAdsReady, onNoAds);
