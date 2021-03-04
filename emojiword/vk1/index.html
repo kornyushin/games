@@ -140,7 +140,7 @@
 		background-image: url("logo.png");
 	}
 	</style> 
-  
+
  </head> 
  <body> 
   <div id="app-container" class="canvas-app-container"> 
@@ -218,6 +218,7 @@
   <div class="outer"> 
   </div> 
   <script type="text/javascript" src="scripts/utils.js"></script> 
+  <script type="text/javascript" src="scripts/vkpurchase.js"></script> 
   <script type="text/javascript" src="scripts/ads.js"></script> 
   <script type="text/javascript" src="scripts/vkplatformprovider.js"></script> 
   <script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script> 
@@ -235,7 +236,9 @@
                 window.adsProvider = new AdsProvider();
 
             })
-        });
+			 window.payProvider=new PayProvider();
+			 window.payProvider.init();
+		});
 		
 		function ShowAd(){
 			console.log('showFullscreenAdv');
@@ -258,6 +261,10 @@
 					window.adsProvider.ShowReward(window.platformProvider.getUserId(),id);
 				}	
 			}	
+		}
+		function buy(item){
+			console.log(item)
+			window.payProvider.order(item)
 		}
     </script>   
  </body>
