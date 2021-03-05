@@ -116,3 +116,15 @@ VKPlatformProvider.prototype.inviteFriends = function() {
          .then(data => console.log(data.success))
         .catch(error => console.log(error));
 }
+
+VKPlatformProvider.prototype.buy = function(item) {
+    if (this.options.logsEnabled)
+        console.log('VKPlatformProvider.buy')
+
+    bridge.send("VKWebAppShowOrderBox", {type:"item",item:item})
+        .then(data => 
+		console.log(data.status);
+		JsToDef.send("onOrderSuccess", data.status);
+		)
+        .catch(error => console.log(error));
+}

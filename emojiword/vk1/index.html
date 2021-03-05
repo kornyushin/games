@@ -140,7 +140,7 @@
 		background-image: url("logo.png");
 	}
 	</style> 
-
+ 
  </head> 
  <body> 
   <div id="app-container" class="canvas-app-container"> 
@@ -264,7 +264,12 @@
 		}
 		function buy(item){
 			console.log(item)
-			window.payProvider.order(item)
+			if(isMobile.any()){
+				window.platformProvider.buy(item);
+			}else{
+				window.payProvider.order(item)
+			}	
+			
 		}
     </script>   
  </body>
