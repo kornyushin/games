@@ -121,7 +121,7 @@ VKPlatformProvider.prototype.buy = function(item) {
     if (this.options.logsEnabled)
         console.log('VKPlatformProvider.buy')
 
-    bridge.send("VKWebAppShowOrderBox", {type:"item",item:item})
+    vkBridge.send("VKWebAppShowOrderBox", {type:"item",item:item})
         .then(function(data) { 
 			console.log(data.status);
 			JsToDef.send("onOrderSuccess", data.status);
