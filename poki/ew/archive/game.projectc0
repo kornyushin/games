@@ -184,7 +184,7 @@ http_cache_enabled = 1
 shared_state = 1
 
 [label]
-max_count = 64
+max_count = 128
 subpixels = 1
 
 [profiler]
@@ -203,4 +203,10 @@ run_while_iconified = 0
 
 [native_extension]
 app_manifest = /generated.appmanifest
+
+[gameanalytics]
+game_key_html5 = 01d3147a8b41e5ec809d619f87d2ca8a
+secret_key_html5 = 4c6635c7da549c9e7631f05cf5f73557a22a7e2a
+build_html5 = 0.1
+auto_detect_app_version = 1
 
